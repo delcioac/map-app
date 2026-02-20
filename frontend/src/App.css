@@ -241,6 +241,39 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-mono);
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
+/* Geo error banner */
+.geo-error {
+  position: fixed;
+  top: var(--header-h);
+  left: 0; right: 0;
+  z-index: 2000;
+  background: rgba(255,62,108,0.15);
+  border-bottom: 1px solid rgba(255,62,108,0.3);
+  color: var(--accent2);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  padding: 8px 20px;
+  text-align: center;
+}
+
+/* Updated at */
+.updated-at {
+  font-size: 0.6rem;
+  color: var(--muted);
+  margin-top: 4px;
+  letter-spacing: 0.05em;
+}
+
+/* New user animation */
+.user-new {
+  animation: flashIn 0.4s ease;
+  border-color: rgba(0,255,136,0.3) !important;
+}
+@keyframes flashIn {
+  0% { background: rgba(0,255,136,0.15); }
+  100% { background: rgba(255,62,108,0.04); }
+}
+
 /* Mobile */
 @media (max-width: 600px) {
   .app {
