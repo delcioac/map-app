@@ -13,9 +13,9 @@ L.Icon.Default.mergeOptions({
 
 const ME_ICON = L.divIcon({
   className: '',
-  html: `<div class="marker-me"><span></span></div>`,
-  iconSize: [20, 20],
-  iconAnchor: [10, 10],
+  html: `<div class="marker-me-wrap"><div class="marker-me-label">YOU</div><div class="marker-me"><span></span></div></div>`,
+  iconSize: [40, 36],
+  iconAnchor: [20, 36],
 });
 
 const OTHER_ICON = L.divIcon({
