@@ -26,7 +26,7 @@ const OTHER_ICON = L.divIcon({
   iconAnchor: [7, 7],
 });
 
-const WS_URL = process.env.REACT_APP_WS_URL || `ws://${window.location.hostname}:3001`;
+const WS_URL = process.env.REACT_APP_WS_URL || `wss://${window.location.hostname}`;
 
 function FlyToUser({ position }) {
   const map = useMap();
